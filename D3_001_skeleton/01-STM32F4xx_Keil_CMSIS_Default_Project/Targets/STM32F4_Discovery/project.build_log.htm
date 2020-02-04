@@ -1,0 +1,68 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.17.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Andrew Markham, University of Oxford, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.17
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.17
+Dialog DLL:      DCM.DLL V1.13.4.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\CloudProjects\2016\SEP\Teaching\ESSVersioned\Labs\Skeletons\D3_001_skeleton\01-STM32F4xx_Keil_CMSIS_Default_Project\project.uvprojx
+Project File Date:  09/14/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'STM32F4-Discovery'
+assembling startup_stm32f40_41xxx.s...
+compiling misc.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_tim.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_spi.c...
+compiling led_driver.c...
+compiling loop_delay.c...
+compiling ess_helper.c...
+compiling pwm_driver.c...
+compiling spi_driver.c...
+..\ESS\spi_driver.c(87): warning:  #1-D: last line of file ends without a newline
+  }
+..\ESS\spi_driver.c: 1 warning, 0 errors
+compiling main.c...
+..\ESS\spi_driver.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+User\main.c(34): warning:  #177-D: variable "ch0" was declared but never referenced
+  	uint8_t ch0 = 0;
+User\main.c(35): warning:  #177-D: variable "ch1" was declared but never referenced
+  	uint8_t ch1 = PWM_MAX;
+User\main.c: 3 warnings, 0 errors
+compiling stm32f4xx_it.c...
+compiling system_stm32f4xx.c...
+linking...
+Program Size: Code=5452 RO-data=424 RW-data=68 ZI-data=1060  
+FromELF: creating hex file...
+".\Targets\STM32F4_Discovery\project.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\CloudProjects\2016\SEP\Teaching\ESSVersioned\Labs\Skeletons\D3_001_skeleton\01-STM32F4xx_Keil_CMSIS_Default_Project\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>

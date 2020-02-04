@@ -1,0 +1,20 @@
+--cpu Cortex-M4.fp
+".\targets\stm32f4_discovery\startup_stm32f40_41xxx.o"
+".\targets\stm32f4_discovery\misc.o"
+".\targets\stm32f4_discovery\stm32f4xx_rcc.o"
+".\targets\stm32f4_discovery\stm32f4xx_gpio.o"
+".\targets\stm32f4_discovery\stm32f4xx_tim.o"
+".\targets\stm32f4_discovery\stm32f4xx_spi.o"
+".\targets\stm32f4_discovery\stm32f4xx_adc.o"
+".\targets\stm32f4_discovery\ess_helper.o"
+".\targets\stm32f4_discovery\led_driver.o"
+".\targets\stm32f4_discovery\loop_delay.o"
+".\targets\stm32f4_discovery\pwm_driver.o"
+".\targets\stm32f4_discovery\spi_driver.o"
+".\targets\stm32f4_discovery\main.o"
+".\targets\stm32f4_discovery\stm32f4xx_it.o"
+".\targets\stm32f4_discovery\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter ".\Targets\STM32F4_Discovery\project.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\project.map" -o .\Targets\STM32F4_Discovery\project.axf
