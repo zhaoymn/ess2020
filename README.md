@@ -4,28 +4,16 @@ How to use printf for debugging
 
 in main.c
 
-#include "stdio.h"
-
-add these lines:
-
-
-// printf() support
-
-int itm_debug(int ch)
-
-{
-
-	return ITM_SendChar(ch);
-	
-}
-
-int fputc(int ch, FILE *f) 
-
-{
-
-    return itm_debug(ch);
-    
-}
+	#include "stdio.h"
+	// printf() support
+	int itm_debug(int ch)
+	{
+		return ITM_SendChar(ch);
+	}
+	int fputc(int ch, FILE *f) 
+	{
+	    return itm_debug(ch);
+	}
 
 
 and in project settings
